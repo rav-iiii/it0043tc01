@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Goldman:wght@400;700&display=swap');
+
+body {background-image: url(https://img.freepik.com/premium-vector/white-background-with-emerald-green-gold-corner_527873-604.jpg?w=1060);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.log{
+    width: 300px;
+    position: fixed;
+    padding-top: 10px;
+    padding-left: 50px;
+}
+
+.heading {
+    font-family: "Goldman", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 45px;
+    padding-top: 165px;
+    text-align: center;
+}
+
+.subheading {
+    font-family: "DM Display", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 30px;
+    text-align: center;
+    
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+.slightheading {
+    font-family: "Goldman", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 20px;
+    text-align: center;
+    margin-left: 190px;
+    margin-right: 190px;
+}
+
+.slightestheading {
+    font-family: "Goldman", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 20px;
+    text-align: center;
+    margin-left: 190px;
+    margin-right: 190px;
+}
+
+.green {
+    font-weight: bold;
+    color: rgb(0, 88, 38)
+}
+
+.semiheading {
+    padding-top: 15px;
+    font-family: "DM Display", serif;
+    font-weight: 400;
+    font-style: normal;
+    text-align: center;
+    font-size: 30px;
+}
+
+.miniheading {
+    padding-top: 5px;
+    font-family: "DM Display", serif;
+    font-weight: 400;
+    font-style: normal;
+    text-align: center;
+    font-size: 30px;
+}
+
+.yellow {
+    font-weight: bold;
+    color: rgb(254, 184, 0)
+}
+
+.itam {
+    width: 300px;
+    position: fixed;
+    padding-top: 80px;
+    padding-left: 120px;
+}
