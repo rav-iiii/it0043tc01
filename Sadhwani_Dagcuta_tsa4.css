@@ -28,10 +28,10 @@ body {
     padding-bottom: 80%;
     border-radius: 10px;
     overflow: hidden;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.2);
     background-image: url(cardbg.jpg);
-    background-size: cover;
-    background-position: center;
+    background-size: 260px;
+    background-position: top;
     transition: transform 0.3s;
     position: relative;
 }
