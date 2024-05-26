@@ -1,47 +1,182 @@
 @import url('https://fonts.googleapis.com/css2?family=Goldman:wght@400;700&display=swap');
+
 body {
-    font-family: Goldman, sans-serif;
-    background-image: url(https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/a11de91a-5e1b-447c-9066-64185f3c8cbb/d7a42h1-39a19868-7cd3-47af-b557-118890a140dc.jpg/v1/fill/w_1192,h_670,q_70,strp/_updated__pokeball_wallpaper_by_rushetafan_d7a42h1-pre.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9NzIwIiwicGF0aCI6IlwvZlwvYTExZGU5MWEtNWUxYi00NDdjLTkwNjYtNjQxODVmM2M4Y2JiXC9kN2E0MmgxLTM5YTE5ODY4LTdjZDMtNDdhZi1iNTU3LTExODg5MGExNDBkYy5qcGciLCJ3aWR0aCI6Ijw9MTI4MCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl19.5XTBE-aavwhrFjzSGtQc0skSV9q26BoP7a9JAhcQfkc);
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
+    font-family: 'Goldman', sans-serif;
+    background-image: url(pokebg.gif);
+    margin: 0;
+    padding: 20px;
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     height: 100vh;
-    margin: 0;
+    box-sizing: border-box;
 }
 
-.card-container {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-    justify-content: center;
+.container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 5px;
+    width: 100%;
+    max-width: 980px;
 }
 
 .card {
-    background-color: white;
+    margin: 0;
+    width: 80%;
+    height: 30%;
+    padding-bottom: 80%;
     border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
     overflow: hidden;
-    width: 250px;
-    text-align: center;
-    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    background-image: url(cardbg.jpg);
+    background-size: cover;
+    background-position: center;
+    transition: transform 0.3s;
+    position: relative;
 }
 
-.card img {
-    width: 100px;
+.card:hover {
+    transform: scale(1.03);
+}
+
+.image img {
+    width: 50%;
     height: auto;
+    display: block;
+    max-width: 90px;
+    max-height: 90px;
+    margin: 10px auto;
 }
 
-.card h2 {
-    font-size: 1.5em;
-    margin: 10px 0;
+.details {
+    height: 70%;
+    padding: 10px;
+    color: white;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    box-sizing: border-box;
+    background: rgba(0, 0, 0, 0.5);
 }
 
-.card .type {
-    font-size: 1.1em;
-    margin: 10px 0;
+.details h1 {
+    font-size: 20px;
+    margin: 5px 0;
 }
 
-.card .type span 
+.details .type-label {
+    font-size: 15px;
+    font-weight: bold;
+    margin: 1px;
+}
+
+.details .types {
+    font-size: 12px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2px;
+}
+
+.details .type {
+    margin: 5px;
+    display: inline-block;
+    padding: 4px 10px;
+    border-radius: 20px;
+    font-weight: bold;
+}
+
+.details .type.grass {
+    background-color: #78C850;
+}
+
+.details .type.fire {
+    background-color: #F08030;
+}
+
+.details .type.water {
+    background-color: #6890F0;
+}
+
+.details .type.ghost {
+    background-color: #705898;
+}
+
+.details .type.steel {
+    background-color: #B8B8D0;
+}
+
+.details .type.rock {
+    background-color: #B8A038;
+}
+
+.details .type.poison {
+    background-color: #A040A0;
+}
+
+.details .desc {
+    margin: 5px;
+    font-size: 12px;
+    margin-bottom: 7px;
+}
+
+.buttons {
+    position: absolute;
+    bottom: 5px;
+    width: 100%;
+    text-align: center;
+}
+
+.add,
+.release {
+    font-family: 'Goldman', sans-serif;
+    padding: 5px 10px;
+    margin: 5px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 12px;
+    transition: background-color 0.3s;
+}
+
+.add {
+    background-color: #0073ee;
+    color: white;
+}
+
+.release {
+    background-color: #DC3545;
+    color: white;
+}
+
+.add:hover {
+    background-color: #1121ff; /* Purple color on hover */
+}
+
+.release:hover {
+    background-color: #b90000; /* Purple color on hover */
+}
+
+.details.darkred {
+    background-color: #C92332;
+}
+
+.details.darkgreen {
+    background-color: #2A7221;
+}
+
+.details.darkblue {
+    background-color: #1338A8;
+}
+
+.details.blue {
+    background-color: #238cc9;
+}
+.details.pink {
+    background-color: #d288fd;
+}
+.details.skyblue {
+    background-color: #757575;
+}
