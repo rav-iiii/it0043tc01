@@ -1,0 +1,343 @@
+@import url('https://fonts.googleapis.com/css2?family=Goldman:wght@400;700&display=swap');
+*{
+    font-family: "Goldman", sans-serif;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-image: url(pokebgggg.gif);
+    background-size: cover;
+}
+.container{
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    width: 90vw;
+    gap: 10px;
+}
+.box{
+    width: 24%;
+    padding: 10px;
+    margin: 0;
+    flex-grow: 1;
+}
+img{
+    max-width: 100%;
+    max-height: 100%;
+}
+.name{
+    display: none;
+}
+.type1{
+    display: none;
+}
+.type2{
+    display: none;
+}
+.type3{
+    display: none;
+}
+.type4{
+    display: none;
+}
+.type5{
+    display: none;
+}
+.type6{
+    display: none;
+}
+.type7{
+    display: none;
+}
+.type8{
+    display: none;
+}
+.type9{
+    display: none;
+}
+.type10{
+    display: none;
+}
+.type11{
+    display: none;
+}
+.type12{
+    display: none;
+}
+.type13{
+    display: none;
+}
+.type14{
+    display: none;
+}
+.type15{
+    display: none;
+}
+.type16{
+    display: none;
+}
+.type17{
+    display: none;
+}
+.type18{
+    display: none;
+}
+#p{
+    display: none;
+}
+#box1{
+    background-color: lightsalmon;
+}
+#box2{
+    background-color: rgb(255, 127, 249);
+}
+#box3{
+    background-color: rgb(255, 255, 118);
+}
+#box4{
+    background-color: burlywood;
+}
+#box5{
+    background-color: rgb(233, 139, 205);
+}
+#box6{
+    background-color: rgb(255, 204, 137);
+}
+#box7{
+    background-color: rgb(247, 232, 30);
+}
+#box8{
+    background-color: rgb(199, 58, 255);
+}
+#box9{
+    background-color: rgb(50, 148, 205);
+}
+#box10{
+    background-color: rgb(20, 80, 136);
+}
+#box11{
+    background-color: #a661ff;
+}
+#box12{
+    background-color: rgb(69, 133, 250);
+}
+
+@media(max-width:740px){
+    .box{
+        width: 100%;
+        justify-content: space-between;
+        display: flex;
+    }
+    
+    img{
+        width: 20px;
+    }
+    .name{
+        display: inline-block;
+        padding-top: ;
+    }
+    .type1{
+        display: none;
+    }
+    .type2{
+        display: none;
+    }
+    .type3{
+        display: none;
+    }
+    .type4{
+        display: none;
+    }
+    .type5{
+        display: none;
+    }
+    .type6{
+        display: none;
+    }
+    .type7{
+        display: none;
+    }
+    .type8{
+        display: none;
+    }
+    .type9{
+        display: none;
+    }
+    .type10{
+        display: none;
+    }
+    .type11{
+        display: none;
+    }
+    .type12{
+        display: none;
+    }
+    .type13{
+        display: none;
+    }
+    .type14{
+        display: none;
+    }
+    .type15{
+        display: none;
+    }
+    .type16{
+        display: none;
+    }
+    .type17{
+        display: none;
+    }
+    .type18{
+        display: none;
+    }
+    #p{
+        display: inline-block;
+    }
+    .box:hover{
+        background-image: url(pokehover.jpg);
+        background-image: cover;
+        background-size: 650px;
+        background-repeat: no-repeat;
+    background-position: center center;
+    }
+
+}
+@media(max-width:250px){
+    .box{
+        width: 100%;
+        justify-content: space-between;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    img{
+        width:  120px;
+        padding-left:  40px;
+    }
+    .name{
+        display: inline-block;
+        text-align: center;
+    }
+    .type1{
+        display: inline-block;
+        background-color: #AAB09F;
+        border-radius: 5%;
+        text-align: center;
+    }
+    .type2{
+        display: inline-block;
+        background-color: #AAB09F;
+        border-radius: 5%;
+        text-align: center;
+    }
+    .type3{
+        display: inline-block;
+        background-color: #E397D1;
+        border-radius: 5%;
+        text-align: center;
+    }
+    .type4{
+        display: inline-block;
+        background-color: #CB5F48;
+        border-radius: 5%;
+        text-align: center;
+    }
+    .type5{
+        display: inline-block;
+        background-color: #AAB09F;
+        border-radius: 5%;
+        text-align: center;
+    }
+    .type6{
+        display: inline-block;
+        background-color: #736C75;
+        border-radius: 5%;
+        text-align: center;
+    }
+    .type7{
+        display: inline-block;
+        background-color: #89A1B0;
+        border-radius: 5%;
+        text-align: center;
+    }
+    .type8{
+        display: inline-block;
+        background-color: #E5709B;
+        border-radius: 5%;
+        text-align: center;
+    }
+    .type9{
+        display: inline-block;
+        background-color: #AAB09F;
+        border-radius: 5%;
+        text-align: center;
+    }
+    .type10{
+        display: inline-block;
+        background-color: #7DA6DE;
+        border-radius: 5%;
+        text-align: center;
+    }
+    .type11{
+        display: inline-block;
+        background-color: #E5C531;
+        border-radius: 5%;
+        text-align: center;
+    }
+    .type12{
+        display: inline-block;
+        background-color: #AAB09F;
+        border-radius: 5%;
+        text-align: center;
+    }
+    .type13{
+        display: inline-block;
+        background-color: #AAB09F;
+        border-radius: 5%;
+        text-align: center;
+    }
+    .type14{
+        display: inline-block;
+        background-color: #539AE2;
+        border-radius: 5%;
+        text-align: center;
+    }
+    .type15{
+        display: inline-block;
+        background-color: #94BC4A;
+        border-radius: 5%;
+        text-align: center;
+    }
+    .type16{
+        display: inline-block;
+        background-color: #B468B7;
+        border-radius: 5%;
+        text-align: center;
+    }
+    .type17{
+        display: inline-block;
+        background-color: #B468B7;
+        border-radius: 5%;
+        text-align: center;
+    }
+    .type18{
+        display: inline-block;
+        background-color: #7DA6DE;
+        border-radius: 5%;
+        text-align: center;
+    }
+
+
+    #p{
+        display: none;
+    }
+    .box:hover{
+        background-image: url(pokehover.jpg);
+        background-image: cover;
+        background-size: 400px;
+        background-repeat: no-repeat;
+    background-position: center center;
+    }
+}
