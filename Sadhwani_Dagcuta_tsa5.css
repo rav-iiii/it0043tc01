@@ -1,0 +1,176 @@
+@import url('https://fonts.googleapis.com/css2?family=Goldman:wght@400;700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Goldman', sans-serif;
+}
+
+.container {
+    width: 100vw;
+    height: 47vw auto;
+    border-radius: 10px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: rgb(160, 0, 0);
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    border: 5px solid black;
+    background-image: url(https://wallpapers-clan.com/wp-content/uploads/2024/04/demon-slayer-rengoku-flame-gif-desktop-wallpaper-cover.gif);
+}
+
+.item {
+    padding: 10px;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    font-size: small;
+    font-weight: bold;
+}
+
+.details {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    gap: 5px;
+}
+
+img {
+    width: 150px;
+}
+
+.desc {
+    text-align: justify;
+    line-height: 1.5;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.name {
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+
+#tanjiro {
+    background-color: #2a6d4c;
+    grid-column: 1/3;
+    grid-row: 1/2;
+}
+
+#nezuko {
+    background-color: #c26544;
+    grid-row: 1/2;
+    grid-column: 3/4;
+}
+
+#rengoku {
+    background-color: #f1d46c;
+    color: black;
+    grid-row: 1/3;
+    grid-column: 4/5;
+}
+
+#kokushibo {
+    background-color: #765991;
+    grid-row: 2/3;
+    grid-column: 1/2;
+}
+
+#rui {
+    background-color: #ada7b1;
+    color: black;
+    grid-row: 2/3;
+    grid-column: 2/4;
+}
+
+#tanjiro .details {
+    flex-direction: row;
+}
+
+#rui .details {
+    flex-direction: row;
+}
+
+@media(max-width: 1100px) {
+    .container {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: auto auto auto;
+    }
+
+    #tanjiro {
+        grid-column: 1;
+        grid-row: 1;
+    }
+
+    #nezuko {
+        grid-row: 1;
+        grid-column: 2;
+    }
+
+    #rengoku {
+        grid-row: 3;
+        grid-column: 1/3;
+    }
+
+    #kokushibo {
+        grid-row: 2;
+        grid-column: 2;
+    }
+
+    #rui {
+        grid-row: 2;
+        grid-column: 1;
+    }
+
+    #rengoku .details {
+        flex-direction: row;
+    }
+
+    #tanjiro .details {
+        flex-direction: column;
+    }
+    
+    #rui .details {
+        flex-direction: column;
+    }
+}
+
+@media(max-width: 550px) {
+    .container {
+        grid-template-columns: 1fr;
+    }
+
+    #tanjiro {
+        grid-column: 1;
+        grid-row: 1;
+    }
+
+    #nezuko {
+        grid-row: 2;
+        grid-column: 1;
+    }
+
+    #rengoku {
+        grid-row: 3;
+        grid-column: 1;
+    }
+
+    #kokushibo {
+        grid-row: 4;
+        grid-column: 1;
+    }
+
+    #rui {
+        grid-row: 5;
+        grid-column: 1;
+    }
+
+    #rengoku .details {
+        flex-direction: column;
+    }
+}
