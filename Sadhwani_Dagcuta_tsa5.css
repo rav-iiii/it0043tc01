@@ -18,7 +18,7 @@
     grid-template-columns: repeat(4, 1fr);
     gap: 10px;
     border: 5px solid black;
-    background-image: url(https://wallpapers-clan.com/wp-content/uploads/2024/04/demon-slayer-rengoku-flame-gif-desktop-wallpaper-cover.gif);
+    background-image: url(bg.gif);
 }
 
 .item {
