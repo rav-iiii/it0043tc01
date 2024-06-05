@@ -1,0 +1,21 @@
+.container{
+    width: 85vw;
+    border: 5px solid black;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: orange;
+}
+
+.item{
+border: 5px solid darkslategray;
+padding: 10px;
+border-radius: 20px;
+}
+
+img{
+    width: 128px;
+}
+
+.desc{
+    text-align: justify;
+}
