@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Flexbox Simulator</title>
+<link rel="stylesheet" href="css.css">
+</head>
+<body>
+<div class="container">
+<div class="controls">
+<button id="reset-flexbox">Reset Flexbox</button>
+<div>
+<label for="gap">Gap:</label>
+<input type="number" id="gap" value="0">
+<button id="set-gap">Set Gap</button>
+</div>
+<div class="section">
+<h3>Flex Direction</h3>
+<button data-flex-direction="row">Row</button>
+<button data-flex-direction="column">Column</button>
+</div>
+<div class="section">
+<h3>Justify Content</h3>
+<button data-justify-content="flex-start">Start</button>
+<button data-justify-content="center">Center</button>
+<button data-justify-content="flex-end">End</button>
+<button data-justify-content="space-between">Space Between</button>
+<button data-justify-content="space-around">Space Around</button>
+<button data-justify-content="space-evenly">Space Evenly</button>
+</div>
+<div class="section">
+<h3>Align Items</h3>
+<button data-align-items="flex-start">Start</button>
+<button data-align-items="center">Center</button>
+<button data-align-items="flex-end">End</button>
+</div>
+<div class="section">
+<h3>Flex Grow</h3>
+<button id="reset-grow">Reset</button>
+<button id="grow-all">Grow All</button>
+<div>
+<label for="grow-1">B-1:</label>
+<input type="number" id="grow-1" value="0">
+<button data-grow="1">Grow B-1</button>
+</div>
+<div>
+<label for="grow-2">B-2:</label>
+<input type="number" id="grow-2" value="0">
+<button data-grow="2">Grow B-2</button>
+</div>
+<div>
+<label for="grow-3">B-3:</label>
+<input type="number" id="grow-3" value="0">
+<button data-grow="3">Grow B-3</button>
+</div>
+</div>
+</div>
+<div class="flex-container">
+<div class="flex-item" id="item-1">1</div>
+<div class="flex-item" id="item-2">2</div>
+<div class="flex-item" id="item-3">3</div>
+</div>
+</div>
+<script src="js.js"></script>
+</body>
+</html>
